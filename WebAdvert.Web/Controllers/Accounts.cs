@@ -3,11 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Amazon.AspNetCore.Identity.Cognito;
+using Amazon.CognitoIdentityProvider;
 using Amazon.Extensions.CognitoAuthentication;
+using Amazon.Runtime.Internal.Auth;
 using Amazon.Runtime.Internal.Transform;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
+using Newtonsoft.Json.Schema;
 using WebAdvert.Web.Models.Accounts;
 
 
@@ -142,5 +145,9 @@ namespace WebAdvert.Web.Controllers
             return View("Login",model);
         }
 
+        
+        
+
+         
     }
 }
